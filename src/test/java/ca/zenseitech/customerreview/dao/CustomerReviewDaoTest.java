@@ -31,6 +31,7 @@ public class CustomerReviewDaoTest extends TestUtil {
         final UserModel userModel = createUser("test1");
         final LanguageModel languageModel = createLanguage("English", "ISO 360");
         final ProductModel productModel = createProduct("Product1");
+
         entityManager.persist(userModel);
         entityManager.persist(languageModel);
         entityManager.persist(productModel);

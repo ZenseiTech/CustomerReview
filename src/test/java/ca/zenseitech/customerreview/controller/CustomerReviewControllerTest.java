@@ -97,8 +97,7 @@ public class CustomerReviewControllerTest extends TestUtil {
 
         mvc.perform(get("/products/3/reviews")
                 .contentType(MediaType.APPLICATION_JSON))
-                .andExpect(status().isNotFound())
-        ;
+                .andExpect(status().isNotFound());
     }
 
     @Test

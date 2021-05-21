@@ -30,11 +30,11 @@ public class CustomerReviewController
 
 	@GetMapping({ "products/{productId:\\d+}/reviews" })
 	public List<CustomerReviewModel> getReviews(@PathVariable final Long productId,
-												@RequestParam(required = false) final Double ratingFrom, @RequestParam(required = false) final Double ratingTo)
+												@RequestParam(required = false) final Double ratingFrom,
+												@RequestParam(required = false) final Double ratingTo)
 	{
 		final ProductModel product = productDao.findOne(productId);
-		if (product == null)
-		{
+		if (product == null) {
 			throw new ProductNotFoundException(productId);
 		}
 
