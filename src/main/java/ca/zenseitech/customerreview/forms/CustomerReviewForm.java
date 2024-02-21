@@ -6,7 +6,7 @@ import java.io.Serializable;
 
 
 /**
- * @author Weichen Zhou
+ * @author Jorge Rodriguez
  */
 public class CustomerReviewForm implements Serializable
 {
